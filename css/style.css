@@ -1,6 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+.header {
+  padding: 15px 0;
+}
+
 .navigation {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .navigation-link {
@@ -24,10 +36,13 @@
   padding: 10px 20px;
 
   position: static;
-  width: 95px;
   height: 40px;
-  right: 105px;
-  top: 15px;
+
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
 
   background: #4592ff;
   border-radius: 20px;
@@ -36,28 +51,227 @@
 }
 
 .button-text {
-  position: static;
-  width: 27px;
-  height: 20px;
-  left: 48px;
-  top: calc(50% - 20px / 2);
+  display: flex;
+  color: #ffffff;
+  flex: none;
 
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 14px;
-  line-height: 20px;
+  margin: 10px 0px;
+}
 
+.button-price {
   display: flex;
   align-items: center;
   color: #ffffff;
 
   flex: none;
-  order: 1;
-  flex-grow: 0;
   margin: 10px 0px;
+  margin-right: 10px;
 }
 
 .button-icon {
   margin-right: 10px;
+}
+
+.button-icon:last-child {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.lable {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 12px;
+
+  position: static;
+  height: 15px;
+  width: 53px;
+
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 15px;
+
+  background: #3dc47e;
+  border-radius: 3px;
+  border: none;
+
+  color: #ffffff;
+
+  flex: none;
+  order: 0;
+}
+
+.slide-title {
+  position: static;
+  width: 458px;
+  height: 140px;
+
+  /* Headline/Headline 1 */
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 70px;
+
+  /* or 127% */
+  display: flex;
+  align-items: center;
+
+  /* Base/Grey-100 */
+  color: #262d33;
+
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.slide-description {
+  position: static;
+  width: 335px;
+  height: 90px;
+
+  /* Large/Large regular text */
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+
+  /* or 167% */
+  display: flex;
+  align-items: center;
+
+  /* Base/Grey-85 */
+  color: #4b5157;
+
+  margin-bottom: 40px;
+}
+
+.slide-1 {
+  background: #b4d1e0 url("../img/background.png") no-repeat top right 27.5%;
+  background-size: 50%;
+}
+
+.slide {
+  padding-top: 90px;
+  padding-bottom: 110px;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.slider-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.card {
+  min-height: 370px;
+  border-radius: 10px;
+  padding-top: 60px;
+  padding-left: 46px;
+  padding-right: 46px;
+  padding-bottom: 80px;
+}
+
+.card-1 {
+  background: #e3e2e3 url("/img/card-image-1.png") no-repeat top;
+  background-size: 100%;
+  background-position: bottom;
+}
+
+.card-2 {
+  background: #e3e2e3;
+  background-size: 100%;
+}
+
+.card-3 {
+  padding-top: 35px;
+  background: #ccd5e6;
+  background-size: 100%;
+}
+
+.card-4 {
+  background: #ff4f52;
+  background-size: 100%;
+  padding-top: 35px;
+  padding-left: 25px;
+}
+
+.card-title {
+  position: static;
+  width: 221.14px;
+  height: 90px;
+  left: 8.11%;
+  right: 52.61%;
+
+  /* Headline/Headline 3 */
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+
+  /* or 120% */
+  display: flex;
+  align-items: center;
+
+  /* Base/Grey-100 */
+  color: #262d33;
+
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.card-title.large {
+  width: 418.84px;
+  height: 100px;
+  max-width: 420px;
+  font-size: 40px;
+  line-height: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.card-text {
+  position: static;
+  width: 175.49px;
+  height: 60px;
+  left: 8.11%;
+  right: 60.72%;
+
+  /* Medium/Medium regular text */
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+
+  /* or 143% */
+  display: flex;
+  align-items: center;
+
+  /* Base/Grey-85 */
+  color: #4b5157;
+
+  margin-bottom: 25px;
+}
+
+.card-text.large {
+  width: 319.46px;
+  height: 20px;
+}
+
+.light {
+  color: #fff;
 }
