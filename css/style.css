@@ -84,8 +84,8 @@ body {
   padding: 5px 12px;
 
   position: static;
-  height: 15px;
-  width: 53px;
+  height: 25px;
+  width: 77px;
 
   font-family: "Lato", sans-serif;
   font-style: normal;
@@ -191,18 +191,19 @@ body {
 }
 
 .card-2 {
-  background: #e3e2e3;
-  background-size: 100%;
+  background: #b9cb99 url("/img/card-image-4.png") no-repeat top right;
+  background-size: 102.6%;
+  background-position: right bottom;
 }
 
 .card-3 {
   padding-top: 35px;
-  background: #ccd5e6;
-  background-size: 100%;
+  background: #dcd3ff url("/img/card-image-3.png") no-repeat top right 20%;
+  background-size: 45%;
 }
 
 .card-4 {
-  background: #ff4f52;
+  background: #ccd5e6 url("/img/card-image-2.png") no-repeat top right;
   background-size: 100%;
   padding-top: 35px;
   padding-left: 25px;
